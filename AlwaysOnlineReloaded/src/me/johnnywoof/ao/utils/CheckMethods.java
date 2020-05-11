@@ -24,7 +24,8 @@ public class CheckMethods {
 		String serverResponse;
 
 		try {
-			serverResponse = sendGet("https://sessionserver.mojang.com/");
+// check one
+			serverResponse = sendGet("https://auth.mojang.com");
 			if (serverResponse.isEmpty())
 				return false;
 		} catch (IOException | URISyntaxException e) {
